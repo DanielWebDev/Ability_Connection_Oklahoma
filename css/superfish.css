@@ -1,0 +1,242 @@
+/*** ESSENTIAL STYLES ***/
+
+/****************/
+/**** colors ****/
+/****************/
+/*
+	dark blue:			#1b315a
+	grey:				#ccc
+	bright neon green:		#d3dd73
+	bright (dark) neon orange:	#ed8c07
+	bright (light) neon orange:	#ffc978;
+*/
+/*********************/
+/**** positioning ****/
+/*********************/
+
+/* "link" (original) states for nav bar */
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.sf-menu {
+	margin-top:		2px;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* width of submenus, after hover, left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%; /* width of submenus, 100% inherits the width of the main nav menu  */
+}
+.sf-menu li { /* styling for "contact us" nav button */
+	float:			left;
+	position:		relative;
+	width:			160px;
+	text-align: 		center;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+/*** hover states ***/
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			2.42em; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+/* sub menu left positioning */
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+/*** DEMO SKIN ***/
+.sf-menu {
+	float:			left;
+	margin-bottom:		14px;
+}
+a {
+	font-size:		1.2em;
+}
+.sf-menu a {
+	padding: 		.45em 0 .78em 0;
+	margin:			0 auto;
+	text-decoration:	none;
+}
+/********************************************/
+/**** level 0: nav bar 'link' text color ****/
+/********************************************/
+.sf-menu a:nth-child(1),
+.sf-menu a:nth-child(2),
+.sf-menu a:nth-child(5),
+.sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#eee;
+	letter-spacing:		-1px;
+}
+/* nav bar text donate button text color */
+.sf-menu li:nth-child(4) a {
+	color: 			#1b315a;
+}
+.sf-menu li:nth-child(3) a { /* level 0 */
+	color:			#eee;
+}
+/**********************************/
+/**** level 1: link text color ****/
+/**********************************/
+.sf-menu li li:nth-child(1) a,
+.sf-menu li li:nth-child(2) a,
+.sf-menu li li:nth-child(3) a,
+.sf-menu li li:nth-child(4) a,
+.sf-menu li li:nth-child(5) a,
+.sf-menu li li:nth-child(6) a,
+.sf-menu li li:nth-child(7) a,
+.sf-menu li li:nth-child(8) a {
+	color:			#1b315a;
+}
+/***********************************/
+/**** level 1: hover text color ****/
+/***********************************/
+.sf-menu li li:nth-child(1) a:hover,
+.sf-menu li li:nth-child(2) a:hover,
+.sf-menu li li:nth-child(3) a:hover,
+.sf-menu li li:nth-child(4) a:hover,
+.sf-menu li li:nth-child(5) a:hover,
+.sf-menu li li:nth-child(6) a:hover,
+.sf-menu li li:nth-child(7) a:hover,
+.sf-menu li li:nth-child(8) a:hover { 
+	color: 			#1b315a;
+}
+/*****************************/
+/**** level 2: text color ****/
+/*****************************/
+.sf-menu li ul li:nth-child(1) a {
+	color: 			#1b315a;
+}
+/***********************************/
+/**** level 2: hover text color ****/
+/***********************************/
+.sf-menu li li:nth-child(1) a:hover {
+	color: 			#1b315a;
+}
+.sf-menu li li:nth-child(1) a:hover {
+	color: 			#1b315a;
+	background: 		#ccc;
+	background: 		-webkit-linear-gradient(top,  #EFEFEF 0%,#EFEFEF 25%,#ccc 62%,#A8A8A8 100%); /* Chrome10+,Safari5.1+ */
+	background: 		-moz-linear-gradient(top,  #EFEFEF 0%,#EFEFEF 25%,#ccc 62%,#A8A8A8 100%); /* FF3.6+ */
+	/*filter: 		progid:DXImageTransform.Microsoft.Gradient(startColorstr='#EFEFEF', endColorstr='#A8A8A8'); /* IE 9 */
+}
+.sf-menu li:nth-child(4) a:hover {
+	color: 			#1b315a;
+	background: 		#ccc;
+	background: 		-webkit-linear-gradient(top,  red 0%,#EFEFEF 25%,#ccc 62%,#A8A8A8 100%); /* Chrome10+,Safari5.1+ */
+	background: 		-moz-linear-gradient(top,  red 0%,#EFEFEF 25%,#ccc 62%,#A8A8A8 100%); /* FF3.6+ */
+	/*filter: 		progid:DXImageTransform.Microsoft.Gradient(startColorstr='#EFEFEF', endColorstr='#A8A8A8'); /* IE 9 */
+}
+/********************************************/
+/**** level 0: nav bar 'link' background ****/
+/********************************************/
+.sf-menu li:nth-child(1),
+.sf-menu li:nth-child(2),
+.sf-menu li:nth-child(3),
+.sf-menu li:nth-child(5) {
+	background:		#1b315a;
+	background: 		-webkit-linear-gradient(top,  #94A7CB 0%,#6D8ECB 25%,#1B315A 72%,#0D2144 100%); /* Chrome10+,Safari5.1+ */
+	background: 		-moz-linear-gradient(top,  #94A7CB 0%,#6D8ECB 25%,#1B315A 72%,#0D2144 100%); /* FF3.6+ */
+	/*filter: 		progid:DXImageTransform.Microsoft.Gradient(startColorstr='#94A7CB', endColorstr='#0D2144'); /* IE 9 */
+}
+/*************************************************/
+/**** level 0: 'hover' text, background color ****/
+/*************************************************/
+.sf-menu a.sf-with-ul:hover:nth-child(1) {
+	color:			#444;
+	background: 		#ccc;
+	background: 		-webkit-linear-gradient(top,  #EFEFEF 0%,#EFEFEF 25%,#ccc 62%,#A8A8A8 100%); /* Chrome10+,Safari5.1+ */
+	background: 		-moz-linear-gradient(top,  #EFEFEF 0%,#EFEFEF 25%,#ccc 62%,#A8A8A8 100%); /* Chrome10+,Safari5.1+ */
+	/*filter: 		progid:DXImageTransform.Microsoft.Gradient(startColorstr='#EFEFEF', endColorstr='#0D2144'); /* IE 9 */
+	padding:		.45em .72em .75em .72em;
+}
+/**************************************************************/
+/**** level 1: 'link' state, only seen whith level 0 hover ****/
+/**************************************************************/
+.sf-menu li ul li a {
+	background:		#ccc;
+	margin-top:		-.07em;
+	border-top:		#1b315a solid .5px;
+}
+/********************************************/
+/* menu background hover state */
+.sf-menu li:hover,
+.sf-menu a:focus,
+.sf-menu a:hover,
+.sf-menu a:active {
+	background:		#ccc;
+	color:			blue;
+	outline:		0;
+}
+/*** arrows **/
+.sf-menu a.sf-with-ul {
+	width: 			132px;
+	height:			15px;
+	text-align: 		center;
+	min-width:		1px; /* trigger IE7 hasLayout so spans position accurately */	
+}
+/* this block of code causes no arrow '>>' to display in nav bar */
+.sf-sub-indicator {
+	position:		absolute;
+	display:		block;
+	right:			.75em;
+	top:			1.05em; /* IE6 only */
+	width:			10px;
+	height:			10px;
+	text-indent: 		-999em;
+	overflow:		hidden;
+	/*background:		url('../images/arrows-ffffff.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
+}
+/******************************/
+/**** level 0: nav radius  ****/
+/******************************/
+.sf-menu a.sf-with-ul,
+.sf-menu li:nth-child(1),
+.sf-menu li:nth-child(2),
+.sf-menu li:nth-child(3),
+.sf-menu li:nth-child(5),
+.sf-menu li:hover,
+.sf-menu a:focus
+{
+	border-radius:      	25px 25px 0px 0px; 
+	-moz-border-radius: 	25px 25px 0px 0px; 
+	-webkit-border-radius: 	25px 25px 0px 0px; 
+}
+/*****************************************/
+/**** 'Donate' button: level 0 states ****/
+/*****************************************/
+/* hover background for 'donate' menu */
+.donate a:link {
+	background:		#d3dd73; /* bright neon green */
+	background: 		-webkit-linear-gradient(top,  #F0F4C7 0%,#EDF4A7 25%,#D3DD73 52%,#9CA738 100%); /* Chrome10+,Safari5.1+ */
+	background: 		-moz-linear-gradient(top,  #F0F4C7 0%,#EDF4A7 25%,#D3DD73 52%,#9CA738 100%); /* Chrome10+,Safari5.1+ */
+	padding:		.45em .74em .78em .72em;
+}
+.sf-menu .donate a:hover {
+	/*background:		red;*/
+}

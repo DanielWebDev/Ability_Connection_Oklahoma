@@ -1,0 +1,419 @@
+/*
+    creator:        www.danielklineweb.com
+    created:        12/22/12
+    client:         Ability Connection Oklahoma
+*/
+@font-face {
+    font-family:        'BitstreamVeraSansRoman';
+    src:                url('../fonts/Bitstream-Vera-Sans-fontfacekit/Vera-webfont.eot');
+    src:                url('../fonts/Bitstream-Vera-Sans-fontfacekit/Vera-webfont.eot?#iefix') format('embedded-opentype'),
+                        url('../fonts/Bitstream-Vera-Sans-fontfacekit/Vera-webfont.woff') format('woff'),
+                        url('../fonts/Bitstream-Vera-Sans-fontfacekit/Vera-webfont.ttf') format('truetype'),
+                        url('../fonts/Bitstream-Vera-Sans-fontfacekit/Vera-webfont.svg#BitstreamVeraSansRoman') format('svg');
+    font-weight:        normal;
+    font-style:         normal;
+}
+body {
+    background-color:   #1c2e5c;
+    display:            block;
+    font:               16px/18px 'BitstreamVeraSansRoman', sans-serif;
+    letter-spacing:     -1px;
+}
+h1#accessibility {
+    display:            none;
+}
+/*************************/
+/**** section styling ****/
+/*************************/
+#wrapper {
+    width:              1028px; /* actual width is 1024px, this larger width causes the #rightsidecontent to stay in place when resizing */
+    margin:             0 auto;
+    padding-top:        15px;
+}
+header {
+    width:              1024px;
+    height:             246px;
+}
+img[src^="./images/ACOK_LOGO"] {
+    margin-top:         -240px;
+    margin-left:        10px;
+    display:            block;
+}
+#google_translate_element {
+    margin:             -33px 0 48px 82px;
+    width:              177px;
+    height:             23px;
+}
+/* nav bar */
+nav {
+    margin-top:         39px;
+    margin-left:        110px;
+}
+/* set top margin */
+aside, section, #rightsidebar {
+    margin-top:         -14px;
+}
+aside {
+    width:              212px;
+    float:              left;
+}
+/*********************************/
+/**** left, right side header ****/
+/*********************************/
+aside #leftsideheader1 { /* left side header 1 */  
+    background:         #D3DD73; /* Old browsers */
+    background:         -moz-linear-gradient(top,  #E8EEAF 0%,#E6EE98 25%,#D3DD73 52%,#A0A66A 100%); /* FF3.6+ */
+    background:         -webkit-linear-gradient(top,  #E8EEAF 0%,#E6EE98 25%,#D3DD73 52%,#A0A66A 100%); /* Chrome10+,Safari5.1+ */
+}
+aside #leftsideheader2 { /* left side header 2 */
+    background:         #eff1f0;    /* greyish cream */
+    background:         -webkit-linear-gradient(top,  #F6F8F7 0%,#F7F8F7 25%,#EFF1F0 52%,#B4B5B4 100%); /* Chrome10+,Safari5.1+ */
+    background:         -moz-linear-gradient(top,  #F6F8F7 0%,#F7F8F7 25%,#EFF1F0 52%,#B4B5B4 100%); /* FF3.6+ */
+}
+aside #leftsideheader3 { /* left side header 3 */
+    background:         #ccc;    /* grey */
+    background:         -webkit-linear-gradient(top,  #E5E5E5 0%,#E5E5E5 25%,#CCCCCC 52%,#999999 100%); /* Chrome10+,Safari5.1+ */
+    background:         -moz-linear-gradient(top,  #E5E5E5 0%,#E5E5E5 25%,#CCCCCC 52%,#999999 100%); /* FF3.6+ */
+}
+#rightsidebar #rightsideheader1 {
+    background:        	#ed8c07; /* bright neon orange */
+    background:         -webkit-linear-gradient(top,  #FFE1B5 0%,#FFD69A 25%,#FFC978 52%,#C18B3B 100%); /* Chrome10+,Safari5.1+ */
+    background:         -moz-linear-gradient(top,  #FFE1B5 0%,#FFD69A 25%,#FFC978 52%,#C18B3B 100%); /* FF3.6+ */
+}
+aside #leftsideheader1, 
+aside #leftsideheader2,
+aside #leftsideheader3,
+#rightsidebar #rightsideheader1 { /* aside header 1, 2, 3 */
+    padding-top:        3px;
+    width:              212px;
+    height:             32px; 
+    border-bottom:      1px solid #1b315a;
+    
+    border-radius:      25px 25px 0px 0px; 
+    -webkit-border-radius: 25px 25px 0px 0px; 
+}
+/**********************************/
+/**** left, right side content ****/
+/**********************************/
+#leftsidecontent1 {
+    background:         #d3dd73;
+}
+#leftsidecontent2 {
+    background:         #eff1f0;
+    height:             210px;
+}
+#leftsidecontent3 {
+    background:         #ddd;
+}
+#leftsidecontent1,
+#leftsidecontent2,
+#leftsidecontent3 {
+    width:              212px;
+    border-top:         .5px solid #1b315a;    
+    border-bottom:      1px solid #1b315a;
+}
+#rightsidebar {
+    float:              left;
+    width:              212px;
+    background:         #1c2e5c; /* navy blue */
+}
+#rightsidecontent1,
+#rightsidecontent2 {
+    background:         #ffc978;
+    padding-top:        5px;
+}
+#rightsidecontent2 {
+    padding-bottom:     690px;
+}
+footer {
+    float:              left;
+    width:              1024px;
+    height:             50px;
+    background-color:   #eff1f0;
+    border-top:         1px solid #1b315a;
+}
+/*****************************/
+/**** header text styling ****/
+/*****************************/
+#about h2,
+#contact h2,
+#donate h2,
+#ways-to-give h2,
+#get_involved h2,
+#services h2,
+#home h2 {
+    font-size:          1.4em;
+    font-weight:        bold;
+    color:              #1c2e5c;
+}
+#home h2,
+#location h2 {
+    margin:             15px 0 10px 35px;    
+}
+#about h2,
+#contact h2,
+#donate h2,
+#ways-to-give h2,
+#get_involved h2,
+#services h2 {
+    margin:             15px 0 10px 24px;        
+}
+#home p:nth-child(2),
+#about p:nth-child(2) {
+    padding-top:        6px;
+}
+header p:nth-child(3) {
+    color:              #fbfbfb;
+    width:              275px;
+    height:             2em;
+    margin:             6px 0 0 82px;
+    line-height:        1.2em;
+    font-size:          .8em;
+}
+aside #leftsideheader1 h2 {
+    margin:             8px 0 0 40px;
+}
+#rightsidebar #rightsideheader1 h2 {
+    margin:             7px 0 0 62px;
+}
+aside #leftsideheader2 h2 {
+    margin:             9px 0 0 22px;
+}
+aside #leftsideheader3 h2 {
+    margin:             8px 0 0 62px;
+}
+aside #leftsideheader1 h2,
+aside #leftsideheader2 h2,
+aside #leftsideheader3 h2,
+#rightsidebar #rightsideheader1 h2 { /* left,right side headers */
+    color:              #1b315a;
+    font-weight:        bold;
+    font-size:          1.2em;
+    letter-spacing:     -1px;
+}
+footer p {
+    color:              #1b315a;
+    margin:             12px 0 0 62px;
+    display:            inline;
+}
+footer img {
+    margin-bottom:      -4px;
+    margin-top:         14px;
+}
+/***********************/
+/**** image styling ****/
+/***********************/
+#leftsidecontent1 img:nth-child(1) {
+    padding:            12px 10px 4px 14px;
+}
+#leftsidecontent1 img:nth-child(2),
+#leftsidecontent1 img:nth-child(3),
+#leftsidecontent1 img:nth-child(4) {
+    padding:            8px 10px 10px 14px;
+}
+#leftsidecontent2 img:nth-child(1) {
+    padding:            10px 10px 10px 13px;
+}
+#leftsidecontent2 img:nth-child(2) {
+    padding:            6px 10px 10px 13px;
+}
+#leftsidecontent3 img:nth-child(1) {
+    padding:            10px 10px 10px 12px;
+}
+/*************************/
+/**** content styling ****/
+/*************************/
+section {
+    float:              left;
+    width:              598px;
+    background:         #eff1f0;
+    border-left:        1px solid #1b315a;
+    border-right:       1px solid #1b315a;
+}
+aside, section {
+    min-height:         1391px;    
+}
+section p {
+    margin-left:        25px;
+    margin-right:       25px;
+}
+#rightsidebar #rightsidecontent1 h3 {
+    margin:             0 0 6px 70px;
+    font-weight:        bold;
+}
+#rightsidebar #rightsidecontent1 a {
+    margin:             10px 0 0 12px;
+}
+#rightsidebar #rightsidecontent1 p:nth-child(3),
+#rightsidebar #rightsidecontent1 p:nth-child(5) {
+    margin:             0 14px 0 12px;
+    text-align:         center;
+}
+#rightsidebar #rightsidecontent1 h2:nth-child(4) { /* $300,000 */
+    font-weight:        bold;
+    font-size:          1.2em;
+    text-align:         center;
+    line-height:        1.4em;
+}
+#rightsidebar #rightsidecontent2 img { /* we help some great kids - Aedrianna donation box */
+    margin:             18px 0 0 14px;
+}
+#ital {
+    font-style:         italic;
+}
+/***************************************/
+/****   Index, About pages styling  ****/
+/***************************************/
+#home img {
+    padding:            30px 34px 24px;
+}
+#home p:nth-child(2) {
+    padding-top:        0;
+}
+#about p:nth-child(1) {
+    padding-top:        15px;    
+}
+#home p:nth-child(2),
+#home p:nth-child(3),
+#about p:nth-child(1),
+#about p:nth-child(2) {
+    width:              525px;
+    font-size:          1.1em;
+    text-align:         justify;
+    margin-left:        34px;
+}
+/*******************************/
+/**** Services page styling ****/
+/*******************************/
+#services h3 {
+    color:              #1b315a;
+    font-weight:        600;
+    margin-left:        25px;
+    font-style:         italic;
+}
+#services p {
+    margin-bottom:      20px;
+}
+/**************************************/
+/****  Ways-to-Give page styling  *****/
+/**************************************/
+#ways-to-give h2 {
+    margin-bottom:      20px;
+}
+#ways-to-give p,
+#ways-to-give a {
+    font-size:          1.1em;
+    text-align:         justify;
+    margin:             0 20px 15px 24px;
+    display:            block;
+}
+#ways-to-give p {
+    width:              540px;
+}
+#ways-to-give p:nth-child(6) {
+    margin-top:         16px;
+}
+#ways-to-give a {
+    width:              525px;
+}
+#ways-to-give a[href="http://fs20.formsite.com/CCDC/form2/index.html"],
+#ways-to-give a[href="./images/tribute12.pdf"] {
+    line-height:        1.2em;
+    background-color:   #ccc;
+    text-align:         center;
+    padding:            6px 10px 10px 10px;
+    margin:             15px 42px 0 22px;
+    /* button radius */
+    -webkit-border-radius: 	15px; 
+    border-radius:      	15px;
+}
+/*******************************/
+/****  Donate page styling  ****/
+/*******************************/
+#donate p:nth-child(2),
+#donate p:nth-child(3),
+#donate p:nth-child(4) {
+    width:              530px;
+    text-align:         justify;
+    font-size:          1.1em;
+    margin-bottom:      1em;
+}
+#donate a {
+    display: block;
+}
+#donate a[href="http://www.irs.gov/pub/irs-pdf/p4303.pdf"],
+#donate a[href="http://www.irs.gov/pub/irs-pdf/i8283.pdf"],
+#donate a[href="http://www.irs.gov/pub/irs-pdf/p561.pdf"],
+#donate a[href="http://fs20.formsite.com/CCDC/form2/index.html"] {
+    line-height:        1.2em;
+    background-color:   #ccc;
+    text-align:         center;
+    padding:            15px 10px;
+    margin:             15px 42px 0 22px;
+    /* button radius */
+    -webkit-border-radius: 	15px; 
+    border-radius:      	15px;
+}
+#donate p:nth-child(8) {
+    margin:             14px 0 0 22px;
+    font-size:          1.2em;
+    color:              #1b315a;
+}
+#donate ul:nth-child(9) {
+    list-style:         disc;
+    margin:             10px 0 0 40px;
+}
+/*********************************/
+/****  Location page styling  ****/
+/*********************************/
+#location p {
+    padding-top:         1em;
+}
+/*******************************/
+/**** Contact page styling  ****/
+/*******************************/
+form p:nth-child(1) label,
+form p:nth-child(2) label,
+form p:nth-child(3) label,
+form p:nth-child(4) label,
+form p:nth-child(5) label {
+    font-weight:        bold;
+    float:              left;
+    width:              100px;
+    text-align:         right;
+    padding-right:      35px;
+    position:           relative;
+    margin-left:        20px;
+}
+/*************************************************/
+/**** Location styling: location/contact page ****/
+/*************************************************/
+#contact h2:nth-child(3) {
+    font-size:		1.2em;
+}
+#location p:nth-child(2) {
+    margin-top:         15px;
+}
+#location ul:nth-child(2) li:nth-child(1),
+#location ul:nth-child(3) li:nth-child(1),
+#contact ul:nth-child(3) li:nth-child(1),
+#contact ul:nth-child(4) li:nth-child(1) {
+    padding-top:	15px;
+    font-weight:	bold;
+}
+#location ul:nth-child(2),
+#contact ul:nth-child(3) {
+    padding-left:	70px;
+}
+#location ul:nth-child(3),
+#contact ul:nth-child(4) {
+    padding-left:       326px;
+    margin-top:         -151px;
+    padding-top:        7px;
+}
+/***************************************/
+/**** interim sidebar bottom height ****/
+/**************************************/
+#leftsidecontent3 {
+    height:             267px;
+}
